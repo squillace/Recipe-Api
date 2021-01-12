@@ -1,0 +1,5 @@
+az apim api import --specification-format Swagger --subscription-required false --path "recipes/v1" --resource-group RecipeApiGroup --service-name recipe-apis --api-id RecipeApi --service-url "https://recipe-api-host.azurewebsites.net" --specification-path "/home/runner/work/Recipe-Api/Recipe-Api/RecipeApi/bin/Release/net5.0/swagger.json"
+
+dotnet swagger tofile --output [output] [startupassembly] [swaggerdoc]
+
+dotnet swagger tofile --output "/home/runner/work/Recipe-Api/Recipe-Api/RecipeApi/bin/Release/net5.0/win-x86/swagger.json" "/home/runner/work/Recipe-Api/Recipe-Api/RecipeApi/bin/Release/net5.0/win-x86/RecipeApi.dll" v1
